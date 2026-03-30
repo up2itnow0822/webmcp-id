@@ -1,0 +1,55 @@
+{
+  "name": "webmcp-id",
+  "version": "1.0.0",
+  "description": "W3C DID-based agent identity for AI agents. Standards-compliant identity, verifiable credentials, and DNS-based discovery for the WebMCP ecosystem.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build && npm run typecheck"
+  },
+  "keywords": [
+    "did",
+    "verifiable-credentials",
+    "agent-identity",
+    "w3c",
+    "mcp",
+    "a2a",
+    "webmcp",
+    "ai-agent",
+    "dns-discovery",
+    "nais",
+    "agent-card",
+    "decentralized-identity",
+    "patent-pending"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/up2itnow0822/webmcp-id.git"
+  },
+  "author": "AI Agent Economy",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@noble/ed25519": "^2.2.0",
+    "jose": "^6.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "vitest": "^4.0.18"
+  }
+}
